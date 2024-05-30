@@ -1,0 +1,549 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+@font-face{
+    font-family: "Avega-Italic";
+    src: url(./Avega-Italic.ttf);
+}
+
+@font-face {
+    font-family: Avega;
+    src: url(C/Users/muhammad_kamran/appdata/local\microsoft\windows\fonts\avega-italic.ttf);
+}
+/* --- Header --- */
+#sidebar {
+    width: 380px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -380px;
+    background-color: #00000087;
+    overflow-x: scroll;
+    /* opacity: 0.6; */
+    padding: 20px 20px 20px 30px;
+    transition: right .5s ease;
+}
+
+#sidebar.open {
+    right: 0;
+}
+
+#closeBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 28px;
+    top: 15px;
+}
+
+#closeBtn img {
+    width: 40px !important;
+}
+
+.sidebar-list li {
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    color: #fff;
+    font-size: 23px;
+    line-height: 51px;
+    list-style: none;
+}
+
+.bar-icons i{
+    color: #fff;
+    font-size: 24px;
+    margin-top: -15;
+    margin-left: 15px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 25px;
+    line-height: 65px;
+    color: white;
+    padding-top: 20px;
+    font-family: "Ubuntu";
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.bg{
+    background: rgb(0,83,255);
+    background: linear-gradient(0deg, rgba(0,83,255,1) 71%, rgba(0,172,255,1) 91%, rgba(0,192,255,1) 99%);
+    height: 20vh;
+}
+
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo img{
+    width: 50%;
+}
+
+/* #header-bg{
+    background-image: linear-gradient(to bottom, rgb(0, 43, 235) , blue);
+    padding: 2rem 1.5rem;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo img{
+    width: 280px ;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.heaader-social-icons i{
+    font-size: 30px;
+    color: rgb(255, 255, 255) ;
+    margin: 0px 8px;
+} */
+
+/* --- Section_1 --- */
+.section-wrapper{
+    padding: 5rem 8rem 3rem 0rem;
+}
+
+.sponsership-content{
+    padding-top: 6rem;
+    display: flex;
+    gap: 6rem;
+}
+
+.sponsership-content-img{
+    width: 45%;
+}
+
+.sponsership-content-img img{
+    width: 100%;
+}
+
+.sponsership-content-img p{
+    font-size: 76px;
+    line-height: 76px;
+    font-weight: 300;
+    background: -webkit-linear-gradient(#00ffea, #0346ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    margin-left: 60px;
+}
+
+.sponsership-content-text{
+    width: 55%;
+}
+
+
+.sponsership-title{
+    padding-left: 40px;
+}
+
+.sponsership-title h1,
+.sponsership-title h2{
+    font-family: Avega;
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#00ffea, #0346ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.sponsership-content-text h2{
+    font-weight: 600;
+    font-size: 34px;
+    margin-bottom: 25px;  
+    line-height: 45px;  
+    color: #4d4d4d;
+}
+
+.sponsership-content-text p{
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 34px;
+    margin-bottom: 25px;
+    color: #4d4d4d;
+}
+
+.how-to-apply h2{
+    font-family: Avega;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #4d4d4d;
+}
+
+.sponsership-list{
+    margin-left: 20px;
+}
+
+.sponsership-list li{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 25px;
+    color: #4d4d4d;
+}
+
+/* ------------------------------------ */
+#tm-haso-gy{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(245, 31, 181), rgb(38, 0, 255));
+    display: block;
+    place-content: center;
+    place-items: center;
+}
+
+.for-apo {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+
+.section-06{
+    padding: 70px 100px;
+}
+
+.fiv-had h1 {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 40px;
+    background: linear-gradient(29deg, #00edff, #017bec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Avega-Italic";
+}
+
+.fiv-had > p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 20px 0px;
+    letter-spacing: 1px;
+    color: #4d4d4d;
+    font-family: "Ubuntu";
+}
+
+.form-1{
+    display: flex;
+    width: 100%;
+}
+
+.fname{
+    width: 50%;
+}
+
+.lname{
+    width: 50%;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #808080;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 90%;
+    padding: 30px 0px;
+}
+
+.brnd-logo {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.brnd-logo img {
+    width: 30%;
+}
+
+.iconss {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.iconss i {
+    font-size: 50px;
+    margin: 0px 10px;
+    background: linear-gradient(359deg, #0051ff, #00cbff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.bg-2{
+    background-color: #4d4d4d;
+    height: 410px;
+}
+
+.foot{
+    padding: 30px 100px;
+}
+
+.last{
+    display: flex;
+    gap: 110px;
+    padding-top: 0px;
+}
+
+.ft-list ul {
+    list-style: none;
+}
+
+.ft-list ul li{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: "Ubuntu";
+}
+
+.icons-ft{
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.icons-ft i{
+    margin: 0px 3px;
+}
+
+@media (max-width:768px) {
+    
+    .sponsership-content{
+        flex-direction:column;
+        gap: 0px;
+    }
+
+    .sponsership-content-img p{
+        display:none;
+    }
+
+    .sponsership-content-text{
+     width:100%;
+     padding-left: 40px;
+    }
+    
+    .sponsership-content-img {
+    width: 100%;
+    }
+
+    .section-06 {
+        padding: 40px 40px;
+    }
+
+    .brnd-logo {
+        padding: 40px 0px;
+    }
+
+    .iconss {
+        margin-top: -20px;
+    }
+
+    .iconss i{
+        font-size: 30px;
+        margin: 0px 5px;
+    }
+
+    .foot {
+        padding: 40px 30px;
+    }
+
+    .logob2 img {
+        width: 30%;
+    }
+
+    .last {
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    .icons-ft {
+        display: flex;
+    }
+}
+
+
+@media (max-width:425px) {
+    .sponsership-content-text {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .brand-logo img {
+        width: 120px;
+    }
+
+    .icons {
+        gap: 1rem;
+    }
+
+    .heaader-social-icons i {
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        margin: 0px 2px;
+    }
+
+    .heaader-social-icons .images{
+        width: 20%;
+    }
+
+    .sponsership-title {
+        padding-left: 0px;
+    }
+
+    .section-wrapper {
+        padding: 0px 0px;
+    }
+
+    .sponsership-title h1, .sponsership-title h2 {
+        font-family: Avega;
+        font-size: 25px;
+        line-height: 25px;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+    .sponsership-content-text p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        margin-bottom: 25px;
+        color: #4d4d4d;
+    }
+
+    .sponsership-list li {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        margin-bottom: 25px;
+        color: #4d4d4d;
+    }
+
+    .how-to-apply h2 {
+        line-height: 30px;
+    }
+
+    .sponsership-content-text h2 {
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 15px;
+        line-height: 30px;
+        color: #4d4d4d;
+    }
+
+    .for-apo {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .section-06 {
+        padding: 20px 20px;
+    }
+
+    .fiv-had h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .fiv-had > p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    input {
+        border-bottom: solid 1px #808080;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        width: 90%;
+        padding: 15px 0px;
+    }
+
+    .form-1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .fname {
+        width: 100%;
+    }
+
+    .lname {
+        width: 100%;
+    }
+
+    .brnd-logo {
+        padding: 20px 0px;
+    }
+
+    .iconss {
+        margin-top: -10px;
+    }
+
+    .iconss i {
+        font-size: 20px;
+        margin: 0px 2px;
+    }
+
+    .foot {
+        padding: 20px 20px;
+    }
+
+    .last{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .ft-list ul li {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .bg-2 {
+        height: 500px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .heaader-social-icons i {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        margin: 0px 1px;
+    }
+    
+}

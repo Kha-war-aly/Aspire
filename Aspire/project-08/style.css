@@ -1,0 +1,704 @@
+@font-face{
+    font-family: "Avega-Italic";
+    src: url(./Avega-Italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+#sidebar {
+    width: 380px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -380px;
+    background-color: #00000087;
+    overflow-x: scroll;
+    /* opacity: 0.6; */
+    padding: 20px 20px 20px 30px;
+    transition: right .5s ease;
+}
+
+#sidebar.open {
+    right: 0;
+}
+
+#closeBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 27px;
+    top: 14px;
+}
+
+#closeBtn img {
+    width: 40px !important;
+}
+
+.sidebar-list li {
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    color: #fff;
+    font-size: 23px;
+    line-height: 51px;
+    list-style: none;
+}
+
+.bar-icons i{
+    color: #fff;
+    font-size: 24px;
+    margin-top: -15;
+    margin-left: 15px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 25px;
+    line-height: 65px;
+    color: white;
+    padding-top: 20px;
+    font-family: "Ubuntu";
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.bg{
+    background: rgb(0,83,255);
+    background: linear-gradient(0deg, rgba(0,83,255,1) 71%, rgba(0,172,255,1) 91%, rgba(0,192,255,1) 99%);
+    height: 20vh;
+}
+
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo img{
+    width: 50%;
+}
+
+/* .bg{
+    background: rgb(0,83,255);
+    background: linear-gradient(0deg, rgba(0,83,255,1) 71%, rgba(0,172,255,1) 91%, rgba(0,192,255,1) 99%);
+    height: 20vh;
+}
+
+
+
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.logo img{
+    width: 50%;
+} */
+
+
+.section-01{
+    display: flex;
+    gap: 80px;
+}
+
+.first-hd{
+    width: 30%;
+}
+
+.first-hd h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    padding: 50px 0px;
+    padding-left: 100px;
+    font-family: "Avega-Italic";
+    background: linear-gradient(126deg, #00cdff, #0066ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first-hd h1 span{
+    font-size: 170px;
+    line-height: 140px;
+    font-weight: 800;
+    padding-left: 20px;
+    font-family: "Avega-Italic";
+    background: linear-gradient(126deg, #00cdff, #0066ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .img-01{
+    padding-left: 5px;
+} */
+
+.img-01 img{
+    width: 100%;
+}
+
+.first-hd-text{
+    width: 40%;
+}
+
+.first-hd-text h2{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 40px 0px;
+    font-family: "Ubuntu";
+    color: #4d4d4d;
+}
+
+.first-hd-text p{
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 12px;
+    font-weight: 500;
+    font-family: "Ubuntu";
+    color: #4d4d4d;
+}
+
+.first-hd-text hr{
+   border-color: rgb(0 4 255 / 58%);
+   margin-top: 10px;
+}
+
+.section-02{
+    display: flex;
+    gap: 80px;
+    padding-top: 100px;
+}
+
+.second-hd{
+    width: 40%;
+}
+
+.second-hd h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    padding: 50px 0px;
+    padding-left: 45px;
+    font-family: "Avega-Italic";
+    background: linear-gradient(126deg, #eac83f, #61ab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.second-hd h1 span{
+    font-size: 170px;
+    line-height: 140px;
+    font-weight: 100;
+    padding-left: 20px;
+    font-family: "Avega-Italic";
+    background: linear-gradient(126deg, #eac83f, #61ab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .img-02{
+    padding-left: 0px;
+} */
+
+.img-02 img{
+    width: 70%;
+}
+
+.second-hd-text{
+    width: 50%;
+    padding-left: 100px;
+}
+
+.second-hd-text h2{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 40px 0px;
+    font-family: "Ubuntu";
+    color: #4d4d4d;
+}
+
+.second-hd-text p{
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 12px;
+    font-weight: 500;
+    font-family: "Ubuntu";
+    color: #4d4d4d;
+}
+
+.second-hd-text hr{
+   border-color: rgb(0 4 255 / 58%);
+   margin-top: 10px;
+}
+
+
+
+
+.section-06{
+    padding: 80px 100px;
+}
+
+.fiv-had h1 {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 40px;
+    background: linear-gradient(29deg, #00edff, #017bec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Avega-Italic";
+}
+
+.fiv-had > p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 20px 0px;
+    letter-spacing: 1px;
+    color: #4d4d4d;
+    font-family: "Ubuntu";
+}
+
+.form-1{
+    display: flex;
+    width: 100%;
+}
+
+.fname{
+    width: 50%;
+}
+
+.lname{
+    width: 50%;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #808080;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 90%;
+    padding: 30px 0px;
+}
+
+.brnd-logo {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.brnd-logo img {
+    width: 30%;
+}
+
+.icons {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.icons i {
+    font-size: 50px;
+    margin: 0px 10px;
+    background: linear-gradient(359deg, #0051ff, #00cbff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.bg-2{
+    background-color: #4d4d4d;
+    height: 410px;
+}
+
+.foot{
+    padding: 30px 100px;
+}
+
+.last{
+    display: flex;
+    gap: 110px;
+    padding-top: 0px;
+}
+
+.ft-list ul {
+    list-style: none;
+}
+
+.ft-list ul li{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: "Ubuntu";
+}
+
+.icons-ft{
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.icons-ft i{
+    margin: 0px 3px;
+}
+
+
+@media (max-width:768px) {
+    .logo img {
+        width: 45%;
+    }
+
+    .logo{
+        margin-left: -30px;
+    }
+
+    .section-01 {
+        gap: 30px;
+        padding: 30px 30px;
+    }
+
+    .first-hd {
+        width: 50%;
+    }
+
+    .first-hd-text {
+        width: 50%;
+    }
+
+    .first-hd h1 {
+        padding: 0px 0px;
+        padding-left: 0px;
+    }
+
+    .first-hd-text h2{
+        padding: 0px 0px;
+    }
+
+    .img-01{
+        padding-top: 100px;
+    }
+
+    .section-02 {
+        gap: 20px;
+        padding: 30px 30px;
+    }
+
+    .second-hd-text {
+        width: 50%;
+        padding-left: 0px;
+    }
+
+    .second-hd {
+        width: 50%;
+    }
+
+    .img-02{
+        padding-top: 80px;
+    }
+
+    .img-02 img {
+        width: 100%;
+    }
+
+    .section-06 {
+        padding: 30px 30px;
+    }
+
+    .brnd-logo{
+        padding: 30px 0px;
+    }
+
+    .icons {
+        margin-top: -20px;
+    }
+
+    .icons i {
+        font-size: 30px;
+        margin: 0px 5px;
+    }
+
+    .foot {
+        padding: 30px 30px;
+    }
+
+    .logob2 img{
+        width: 30%;
+    }
+
+    .last {
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    .icons-ft{
+        display: flex;
+    }
+
+    .icons-ft i {
+        margin: 0px 5px;
+    }
+}
+
+
+@media (max-width:425px) {
+    #sidebar.open {
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    #sidebar{
+        padding-top: 25px;
+    }
+
+    #closeBtn{
+        right: 46px;
+        top: 28px;
+    }
+    
+
+    #closeBtn img {
+        width: 22px !important;
+    }
+
+    .logo-01 {
+        padding: 20px 20px;
+    }
+
+    .side-bar {
+        padding-left: 100px;
+        padding-top: 13px;
+        padding-right: 0px;
+        
+    }
+
+    .side-bar img{
+        width: 100%;
+    }
+
+    ul li {
+        font-weight: 300;
+        list-style: none;
+        font-size: 23px;
+        line-height: 20px;
+        color: white;
+        padding-top: 27px;
+        font-family: "Ubuntu";
+    }
+
+    .bar-icons i {
+        font-size: 20px;
+        margin-left: 6px;
+    }
+
+    .bar-icons{
+        padding-left: 180px;
+    }
+
+    
+    /* .navebar{
+        padding: 16px 20px;
+    } */
+
+    .logo{
+        margin-left: -10px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+
+    .section-01{
+        flex-direction: column;
+    }
+
+    .first-hd {
+        width: 100%;
+    }
+
+    .first-hd h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .first-hd h1 span{
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    .img-01 {
+        padding-top: 20px;
+    }
+
+    .first-hd-text {
+        width: 100%;
+    }
+
+    .first-hd-text h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .first-hd-text p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .first-hd-text hr {
+        margin-top: 5px;
+    }
+
+    .section-02{
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    .second-hd-text{
+        width: 100%;
+    }
+
+    .second-hd{
+        width: 100%;
+    }
+
+    .second-hd h1 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 500;
+        padding: 0px 0px;
+        padding-left: 0px;
+    }
+
+    .second-hd h1 span {
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    .second-hd-text h2{
+        font-size: 20px;
+        line-height: 25px;
+        padding: 0px 0px;
+    }
+
+    .second-hd-text p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .section-06 {
+        padding: 20px 20px;
+    }
+
+    .fiv-had h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .fiv-had > p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    input {
+        border-bottom: solid 1px #808080;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        width: 90%;
+        padding: 15px 0px;
+    }
+
+    .form-1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .fname {
+        width: 100%;
+    }
+
+    .lname {
+        width: 100%;
+    }
+
+    .brnd-logo {
+        padding: 20px 0px;
+    }
+
+    .icons {
+        margin-top: -10px;
+    }
+
+    .icons i {
+        font-size: 20px;
+        margin: 0px 2px;
+    }
+
+    .last{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .ft-list ul li {
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 3px;
+    }
+
+    .foot {
+        padding: 0px 20px;
+    }
+
+    .bg-2 {
+        height: 500px;
+    }
+}
+
+@media (max-width: 375px) {
+    #closeBtn {
+        right: 43px;
+        top: 26px;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    #closeBtn img {
+        width: 15px !important;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+
+    .logo img {
+        width: 60%;
+    }
+}

@@ -1,0 +1,651 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: Avega;
+    src: url(C/Users/muhammad_kamran/appdata/local\microsoft\windows\fonts\avega-italic.ttf);
+}
+
+@font-face{
+    font-family: "Avega-Italic";
+    src: url(./Avega-Italic.ttf);
+}
+
+#sidebar {
+    width: 380px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -380px;
+    background-color: #0000008c;
+    overflow-x: scroll;
+    /* opacity: 0.6; */
+    padding: 20px 20px 20px 30px;
+    transition: right .5s ease;
+}
+
+#sidebar.open {
+    right: 0;
+}
+
+#closeBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 28px;
+    top: 15px;
+}
+
+#closeBtn img {
+    width: 40px !important;
+}
+
+.sidebar-list li {
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    color: #fff;
+    font-size: 23px;
+    line-height: 51px;
+    list-style: none;
+}
+
+.bar-icons i{
+    color: #fff;
+    font-size: 24px;
+    margin-top: -15;
+    margin-left: 15px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 25px;
+    line-height: 65px;
+    color: white;
+    padding-top: 20px;
+    font-family: "Ubuntu";
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.bg{
+    background: rgb(0,83,255);
+    background: linear-gradient(0deg, rgba(0,83,255,1) 71%, rgba(0,172,255,1) 91%, rgba(0,192,255,1) 99%);
+    height: 20vh;
+}
+
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo img{
+    width: 50%;
+}
+
+
+/* .bg{
+    background: rgb(0,83,255);
+    background: linear-gradient(0deg, rgba(0,83,255,1) 71%, rgba(0,172,255,1) 91%, rgba(0,192,255,1) 99%);
+    height: 20vh;
+}
+
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.logo img{
+    width: 50%;
+} */
+
+.section-wrapper{
+    padding: 5rem 6rem;
+}
+
+.section-title h1{
+    font-family: Avega;
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7rem;  background: -webkit-linear-gradient(#00ffea, #0346ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    padding-left: 6px;
+}
+
+.content{
+    margin-left: 30px;
+    display: flex;
+    gap: 7rem;
+}
+
+.profile-img{
+    border: 2px solid  blue;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8;
+}
+
+.profile-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: blue;
+    object-fit: cover;
+    object-position: center;
+}
+
+.envelope-img{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.envelope-img img{
+    width: 70px;
+
+}
+
+.envelope-img h4{
+    font-size: 28px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    object-fit: contain;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.person-detail h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+.person-detail h3{
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 13px;
+    color: #4d4d4d;
+}
+
+#line{
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, rgb(91, 222, 255) , blue);
+    margin: 3rem 0rem;
+}
+
+.person-detail p{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 25px;
+    color: #4d4d4d;
+}
+
+.section-06{
+    padding: 70px 100px;
+}
+
+.fiv-had h1 {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 40px;
+    background: linear-gradient(29deg, #00edff, #017bec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Avega-Italic";
+}
+
+.fiv-had > p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 20px 0px;
+    letter-spacing: 1px;
+    color: #4d4d4d;
+    font-family: "Ubuntu";
+}
+
+.form-1{
+    display: flex;
+    width: 100%;
+}
+
+.fname{
+    width: 50%;
+}
+
+.lname{
+    width: 50%;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #808080;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 90%;
+    padding: 30px 0px;
+}
+
+.brnd-logo {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.brnd-logo img {
+    width: 30%;
+}
+
+.icons {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.icons i {
+    font-size: 50px;
+    margin: 0px 10px;
+    background: linear-gradient(359deg, #0051ff, #00cbff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* .bg-2{
+    background-color: #4d4d4d;
+    height: 410px;
+}
+
+.foot{
+    padding: 50px 100px;
+}
+
+.last{
+    display: flex;
+    gap: 110px;
+    padding-top: 50px;
+}
+
+.ft-list ul {
+    list-style: none;
+}
+
+.ft-list ul li{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: "Ubuntu";
+}
+
+.icons-ft{
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.icons-ft i{
+    margin: 0px 3px;
+} */
+
+.bg-2{
+    background-color: #4d4d4d;
+    height: 410px;
+}
+
+.foot{
+    padding: 0px 100px;
+}
+
+.last{
+    display: flex;
+    gap: 110px;
+    padding-top: 50px;
+}
+
+.ft-list ul {
+    list-style: none;
+}
+
+.ft-list ul li{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: "Ubuntu";
+}
+
+.icons-ft{
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.icons-ft i{
+    margin: 0px 3px;
+}
+
+@media (max-width:768px){
+    .section-title h1 {
+        font-size: 36px;
+        margin-bottom: 2.5rem;
+    }
+
+    .section-wrapper {
+        padding: 5rem 1.2rem;
+    }
+    .content{
+        margin: 0px;
+        gap: 2rem;
+    }
+
+    .section-06 {
+        padding: 30px 30px;
+    }
+
+    .brnd-logo{
+        padding: 30px 0px;
+    }
+
+    .icons {
+        margin-top: -20px;
+    }
+
+    .icons i {
+        font-size: 30px;
+        margin: 0px 5px;
+    }
+
+    .section-06 {
+        padding: 30px 30px;
+    }
+
+    .brnd-logo{
+        padding: 30px 0px;
+    }
+
+    .icons {
+        margin-top: -20px;
+    }
+
+    .icons i {
+        font-size: 30px;
+        margin: 0px 5px;
+    }
+
+    .foot {
+        padding: 0px 30px;
+    }
+
+    .logob2 img{
+        width: 30%;
+    }
+
+    .last {
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    .icons-ft{
+        display: flex;
+    }
+
+    .icons-ft i {
+        margin: 0px 5px;
+    }
+}
+
+@media (max-width:425px){
+    #sidebar.open {
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    #sidebar{
+        padding-top: 25px;
+    }
+
+    #closeBtn{
+        right: 46px;
+        top: 28px;
+    }
+    
+
+    #closeBtn img {
+        width: 22px !important;
+    }
+
+    .logo-01 {
+        padding: 20px 20px;
+    }
+
+    .side-bar {
+        padding-left: 100px;
+        padding-top: 13px;
+        padding-right: 0px;
+        
+    }
+
+    .side-bar img{
+        width: 100%;
+    }
+
+    ul li {
+        font-weight: 300;
+        list-style: none;
+        font-size: 23px;
+        line-height: 20px;
+        color: white;
+        padding-top: 50px;
+        font-family: "Ubuntu";
+    }
+
+    
+    /* .navebar{
+        padding: 16px 20px;
+    } */
+
+    .logo{
+        margin-left: -10px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+
+    /* .navebar{
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+
+    .sidebar img{
+        width: 90%;
+    } */
+
+    .section-title h1 {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        gap: 2rem;
+    }
+
+    .section-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .envelope-img{
+        gap: 16px;
+        margin-top: 26px;
+    }
+
+    .envelope-img img{
+        width: 35px;
+    }
+
+    .social-link{
+        gap: 20px;
+        margin-top: 14px;
+    }
+
+    .social-link img{
+        width: 30px;
+    }
+
+    #line {
+        margin: .9rem 0rem;
+    }
+
+    .person-detail h2 {
+        font-size: 24px;
+    }
+
+    .person-detail h3 {
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    .person-detail p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    .section-06 {
+        padding: 20px 20px;
+    }
+
+    .fiv-had h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .fiv-had > p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    input {
+        border-bottom: solid 1px #808080;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        width: 90%;
+        padding: 15px 0px;
+    }
+
+    .form-1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .fname {
+        width: 100%;
+    }
+
+    .lname {
+        width: 100%;
+    }
+
+    .brnd-logo {
+        padding: 20px 0px;
+    }
+
+    .icons {
+        margin-top: -10px;
+    }
+
+    .icons i {
+        font-size: 20px;
+        margin: 0px 2px;
+    }
+
+    .last{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .foot {
+        padding: 10px 20px;
+    }
+
+    .ft-list ul li {
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 3px;
+    }
+
+    .bg-2 {
+        height: 500px;
+    }
+}
+
+@media (max-width: 375px) {
+    #closeBtn {
+        right: 43px;
+        top: 26px;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    #closeBtn img {
+        width: 15px !important;
+    }
+
+    .logo {
+        margin-left: -30px;
+        padding-top: 10px;
+    }
+
+    .logo img {
+        width: 60%;
+    }
+}

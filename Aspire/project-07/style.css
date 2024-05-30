@@ -1,0 +1,712 @@
+@font-face{
+    font-family: "Avega-Italic";
+    src: url(./Avega-Italic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+#sidebar {
+    width: 380px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -380px;
+    background-color: #0000008c;
+    overflow-x: scroll;
+    /* opacity: 0.6; */
+    padding: 20px 20px 20px 30px;
+    transition: right .5s ease;
+}
+
+#sidebar.open {
+    right: 0;
+}
+
+#closeBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 27px;
+    top: 14px;
+}
+
+#closeBtn img {
+    width: 40px !important;
+}
+
+.sidebar-list li {
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    color: #fff;
+    font-size: 23px;
+    line-height: 51px;
+    list-style: none;
+}
+
+.bar-icons i{
+    color: #fff;
+    font-size: 24px;
+    margin-top: -15;
+    margin-left: 15px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 25px;
+    line-height: 65px;
+    color: white;
+    padding-top: 20px;
+    font-family: "Ubuntu";
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.bg{
+    background: rgb(0,83,255);
+    background: linear-gradient(0deg, rgba(0,83,255,1) 71%, rgba(0,172,255,1) 91%, rgba(0,192,255,1) 99%);
+    height: 20vh;
+}
+
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.img-01{
+    background-image: url('img/jersey-mockup-of-two-happy-friends-with-soccer-uniforms-33568.png');
+    width: 100%;
+    height: 150vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.first-hd{
+    position: relative;
+}
+
+.first-hd h1{
+    position: absolute;
+    top: 318px;
+    left: 106px;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: "Avega-Italic";
+    color: white;
+    text-shadow: 4px 11px 20px black;
+}
+
+.first-hd h1 span{
+    font-size: 100px;
+    font-weight: 100;
+    padding-left: 20px;
+    text-transform: lowercase;
+    font-family: "Ubuntu";
+}
+
+.img-02{
+
+  
+}
+
+
+.bg-image{
+    
+    background:url('img/logo_pattern.png'),linear-gradient(0deg, rgba(0,83,255,1) 53%, rgba(0,192,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    opacity: 10;
+}
+
+.section-03{
+    display: flex;
+    padding: 100px 0px;
+}
+
+.second-hd{
+    width: 50%;
+    padding-left: 100px;
+}
+
+.second-hd h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: "Avega-Italic";
+    padding-left: 6px;
+    background: linear-gradient(46deg, #f68d1c, #e61913);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.second-hd h2{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #4d4d4d;
+    font-family: "Ubuntu";
+    padding-top: 20px;
+}
+
+.second-hd p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+    padding-top: 10px;
+    color: #959595;
+    font-family: "Ubuntu";
+    padding-top: 20px;
+}
+
+.img-03{
+    width: 50%;
+    padding-top: 60px;
+}
+
+.img-03 img{
+    width: 100%;
+}
+
+.section-04{
+    display: flex;
+}
+
+.third-hd{
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 60px;
+}
+
+.third-hd h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: "Avega-Italic";
+    padding-left: 6px;
+    background: linear-gradient(46deg, #f68d1c, #e61913);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.third-hd h2{
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #4d4d4d;
+    font-family: "Ubuntu";
+    padding-top: 20px;
+}
+
+.third-hd p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    padding-top: 10px;
+    color: #959595;
+    font-family: "Ubuntu";
+    padding-top: 20px;
+}
+
+.img-04{
+    width: 50%;
+    padding-top: 60px;
+}
+
+.img-04 img{
+    width: 100%;
+}
+
+.section-05{
+    display: flex;
+}
+
+.four-hd{
+    width: 50%;
+    padding-left: 100px;
+    margin-top: -60px;
+}
+
+.four-hd h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: "Avega-Italic";
+    padding-left: 6px;
+    background: linear-gradient(46deg, #f68d1c, #e61913);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.four-hd h2{
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #4d4d4d;
+    font-family: "Ubuntu";
+    padding-top: 20px;
+}
+
+.four-hd p{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-top: 10px;
+    color: #959595;
+    font-family: "Ubuntu";
+    padding-top: 20px;
+}
+
+#btn{
+    background-image: url('img/btn-orange.png');
+    height: 50px;
+    width: 60%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#btn  p{
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: "Ubuntu";
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-top: -16px;
+}
+
+#btn p:hover{
+    color: rgb(126, 125, 125) !important;
+    cursor: pointer !important;
+}
+
+.img-05{
+    width: 50%;
+    padding-top: 40px;
+}
+
+.img-05 img{
+    width: 100%;
+}
+
+.section-06{
+    padding: 80px 100px;
+}
+
+.fiv-had h1 {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 40px;
+    background: linear-gradient(29deg, #00edff, #017bec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Avega-Italic";
+}
+
+.fiv-had > p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 20px 0px;
+    letter-spacing: 1px;
+    color: #4d4d4d;
+    font-family: "Ubuntu";
+}
+
+.form-1{
+    display: flex;
+    width: 100%;
+}
+
+.fname{
+    width: 50%;
+}
+
+.lname{
+    width: 50%;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #808080;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 90%;
+    padding: 30px 0px;
+}
+
+.brnd-logo {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.brnd-logo img {
+    width: 30%;
+}
+
+.icons {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.icons i {
+    font-size: 50px;
+    margin: 0px 10px;
+    background: linear-gradient(359deg, #0051ff, #00cbff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-2{
+    background-color: #4d4d4d;
+    height: 500px;
+}
+
+.foot{
+    padding: 50px 100px;
+}
+
+.last{
+    display: flex;
+    gap: 110px;
+    padding-top: 50px;
+}
+
+.ft-list ul {
+    list-style: none;
+}
+
+.ft-list ul li{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: "Ubuntu";
+}
+
+.icons-ft{
+    font-size: 23px;
+    color: #ffffff;
+}
+
+.icons-ft i{
+    margin: 0px 3px;
+}
+
+@media (max-width:768px) {
+
+    .first-hd h1 {
+        position: absolute;
+        top: 188px;
+        left: 36px;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .first-hd h1 span {
+        font-size: 70px;
+    }
+
+    .section-03 {
+        flex-direction: column;
+        padding: 40px 40px;
+    }
+
+    .second-hd {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .img-03 {
+        width: 100%;
+    }
+
+    .section-04 {
+        flex-direction: column;
+        padding: 40px 40px;
+    }
+
+    .third-hd {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .img-04 {
+        width: 100%;
+    }
+
+    .section-05 {
+        flex-direction: column-reverse;
+        padding: 40px 40px;
+    }
+
+    .four-hd{
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+
+    #btn{
+        height: 50px;
+        width: 44%;
+        margin-top: 30px;
+    }
+
+    .img-05{
+        width: 100%;
+        margin-top: -30px;
+        padding-top: 0px;
+    }
+
+    .section-06 {
+        padding: 40px 40px;
+    }
+    
+    .brnd-logo {
+        width: 100%;
+        text-align: center;
+        padding: 40px 0px;
+    }
+
+    .icons {
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    .icons i{
+        font-size: 30px;
+    }
+
+    .foot {
+        padding: 30px 40px;
+    }
+
+    .logob2 img{
+        width: 30%;
+    }
+
+    .last{
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 0px;
+    }
+
+    .icons-ft i {
+        margin: 8px 3px;
+    }
+
+    .bg-2 {
+        height: 770px;
+    }
+}
+
+@media (max-width:425px) {
+    #sidebar {
+        width: 380px;
+        height: 100%;
+    }
+    .first-hd h1 {
+        position: absolute;
+        top: 258px;
+        left: 46px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .first-hd h1 span {
+        font-size: 40px;
+        padding-left: 70px;
+    }
+
+    .section-03 {
+        padding: 20px 20px;
+    }
+
+    .second-hd h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .second-hd h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .second-hd p {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+
+    .img-03 {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .section-04 {
+        padding: 20px 20px;
+    }
+
+    .third-hd {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .third-hd h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .third-hd h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .third-hd p {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+
+    .img-04 {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .section-05 {
+        padding: 20px 20px;
+    }
+
+    .four-hd h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .four-hd h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .four-hd p {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+
+    #btn {
+        height: 35px;
+        width: 56%;
+        margin-top: 20px;
+    }
+
+    #btn p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .section-06 {
+        padding: 20px 20px;
+    }
+
+    .fiv-had h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .fiv-had  p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    input{
+        font-size: 20px;
+        line-height: 25px;
+        padding: 20px 0px;
+    }
+
+    .ft-list ul li {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .form-1{
+        flex-direction: column;
+    }
+
+    .fname {
+        width: 100%;
+    }
+
+    .lname {
+        width: 100%;
+    }
+
+    .brnd-logo {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .brnd-logo img {
+        width: 40%;
+    }
+
+    .icons {
+        text-align: center;
+        margin-top: -10px;
+        margin-right: 12px;
+    }
+
+    .icons i {
+        font-size: 23px;
+        margin: 0px 3px;
+    }
+
+    .bg-2 {
+        height: 570px;
+    }
+
+    .foot {
+        padding: 0px 20px;
+        padding-top: 10px;
+    }
+
+    .logob2 img {
+        width: 40%;
+        padding-top: 5px;
+    }
+
+    .icons-ft {
+        font-size: 20px;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+}
